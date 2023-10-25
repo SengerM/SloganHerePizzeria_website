@@ -113,7 +113,7 @@ def generate_menu():
 		dict(
 			img_src = 'https://www.recipetineats.com/wp-content/uploads/2020/05/Pepperoni-Pizza_5-SQjpg.jpg',
 			name = 'Calabrota',
-			description = 'Es como nuestra calabresa, pero más cargada!',
+			description = 'Es como nuestra calabresa, pero más cargadota!',
 		),
 		dict(
 			img_src = 'https://www.deliciousmagazine.co.uk/wp-content/uploads/2023/03/960-2023D031_MIED_PIZZA.jpg',
