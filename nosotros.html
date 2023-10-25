@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nosotros</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+  </head>
+  <body>
+    <header id="page_header">
+      <div id="logo_container" style="height: 222px; display: flex; justify-content: center;">
+        <a href="index.html">
+          <img alt="Logo" src="https://thumbs.dreamstime.com/b/italian-pizza-restaurant-design-logo-symbols-food-drink-restaurants-italian-pizza-restaurant-design-logo-symbols-210928159.jpg" style="object-fit: contain; height: 100%;">
+        </a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </header>
+    <div id="page_content">
+      <h1>Nosotros</h1>
+      <div style="width: 100%; height: 77vh;">
+        <img src="https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2021/07/08/490b92922df3407cb5b91d3122a43579_Pavillon-Ledoyen.jpg" style="width: 100%; height: 100%; object-fit: contain; overflow: hidden; border-radius: 11px;">
+      </div>
+      <p>La pizzería de lujo Slogan Here es un auténtico oasis culinario para los amantes de la pizza que buscan una experiencia gastronómica excepcional. Ubicada en el corazón de la ciudad, este elegante establecimiento irradia sofisticación desde el momento en que cruzas su umbral. El ambiente es una mezcla perfecta de modernidad y tradición italiana, con techos altos, iluminación tenue y una decoración que rinde homenaje a las raíces italianas de la pizzería. Cada detalle ha sido cuidadosamente diseñado para ofrecer a los comensales una sensación de lujo inigualable.</p>
+      <p>La excelencia de La Dolce Piazza se refleja en su carta de pizzas gourmet, con ingredientes de la más alta calidad procedentes de Italia y una atención meticulosa al proceso de preparación. Los comensales pueden disfrutar de pizzas artesanales únicas, como la &quot;Pizza Trufa Supreme&quot;, que combina trufa negra fresca, queso mozzarella de bufala y una salsa de tomate casera. Además, la extensa carta de vinos ofrece una selección impresionante de etiquetas italianas y otras opciones internacionales, cuidadosamente elegidas para maridar a la perfección con cada pizza.</p>
+      <p>El servicio impecable en La Dolce Piazza es otra característica distintiva de esta pizzería de lujo. El personal altamente capacitado y atento está siempre disponible para asesorar a los clientes en la elección de platos y vinos, brindando una experiencia gastronómica personalizada. En resumen, La Dolce Piazza es el destino ideal para aquellos que buscan deleitarse con la pizza de la más alta calidad en un entorno lujoso y elegante, donde cada visita se convierte en un festín culinario inolvidable.</p>
+      <footer id="page_footer" style="margin: 55px 0 55px 0; display: flex; flex-direction: column; align-items: center; gap: 22px; flex-wrap: wrap;">
+        <div style="flex-shrink: 0;">© Pizza Paradiso 2023</div>
+        <div style="display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" style="filter: invert(1) opacity(.8); height: 22px;" title="instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png" style="filter: invert(1) opacity(.8); height: 22px;" title="facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/3938/3938074.png" style="filter: invert(1) opacity(.8); height: 22px;" title="tick tock">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+          <div>Cotizaciones divisas al día de la fecha</div>
+          <span style="display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap;">
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_USD"></span>
+              <span>ARS/USD</span>
+            </div>
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_BRL"></span>
+              <span>ARS/BRL</span>
+            </div>
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_EUR"></span>
+              <span>ARS/EUR</span>
+            </div>
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script src="js/divisas.js"></script>
+  </body>
+</html>

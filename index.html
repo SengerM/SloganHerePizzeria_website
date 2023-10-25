@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&amp;display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+  </head>
+  <body>
+    <header id="page_header">
+      <div id="logo_container" style="height: 222px; display: flex; justify-content: center;">
+        <a href="index.html">
+          <img alt="Logo" src="https://thumbs.dreamstime.com/b/italian-pizza-restaurant-design-logo-symbols-food-drink-restaurants-italian-pizza-restaurant-design-logo-symbols-210928159.jpg" style="object-fit: contain; height: 100%;">
+        </a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </header>
+    <div id="page_content">
+      <h1>Un lugar distinto</h1>
+      <p>Sumérjase en una experiencia culinaria sin igual, donde la tradición italiana se fusiona con la elegancia contemporánea. Nuestro compromiso es ofrecer a nuestros distinguidos comensales una deliciosa sinfonía de sabores, ingredientes frescos y una presentación impecable en cada bocado. Desde las exquisitas recetas de nuestras pizzas artesanales hasta el servicio impecable en un entorno sofisticado, &quot;Slogan Here&quot; es el lugar donde los amantes de la buena comida se reúnen para disfrutar de la auténtica excelencia gastronómica. Bienvenidos a un viaje gastronómico que deleitará sus sentidos y elevará sus expectativas.</p>
+      <img src="https://www.coastlinenservices.com/wp-content/uploads/2019/07/shutterstock_741884605.jpg" style="width: 100%; max-height: 88vh; border-radius: 11px;">
+      <footer id="page_footer" style="margin: 55px 0 55px 0; display: flex; flex-direction: column; align-items: center; gap: 22px; flex-wrap: wrap;">
+        <div style="flex-shrink: 0;">© Pizza Paradiso 2023</div>
+        <div style="display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" style="filter: invert(1) opacity(.8); height: 22px;" title="instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/1200px-Facebook_icon_%28black%29.svg.png" style="filter: invert(1) opacity(.8); height: 22px;" title="facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/3938/3938074.png" style="filter: invert(1) opacity(.8); height: 22px;" title="tick tock">
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+          <div>Cotizaciones divisas al día de la fecha</div>
+          <span style="display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap;">
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_USD"></span>
+              <span>ARS/USD</span>
+            </div>
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_BRL"></span>
+              <span>ARS/BRL</span>
+            </div>
+            <div style="flex-shrink: 0;">
+              <span>●</span>
+              <span id="precio_EUR"></span>
+              <span>ARS/EUR</span>
+            </div>
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script src="js/divisas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+:root {
+    --main-background-color: #1a1a1a;
+    --light-light-background-color: #f5faff;
+    --border-color: #c7c5bb;
+    --headers-color: #c7c5bb;
+    --border-radius-for-box: .5em;
+    --transition-time: 1s;
+    --sidebar-width: 300px;
+}
+body {
+	font-family: sans-serif;
+	text-align: justify;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: var(--main-background-color);
+	color: #c7c5bb;
+}
+h1 {
+	border-bottom: 1px solid var(--border-color);
+}
+h1, h2, h3, h4, h5, h6, h7 {
+	margin-top: 30px;
+	color: var(--headers-color);
+}
+h4, h5, h6, h7 {
+	font-size: 100%;
+}
+a {
+	transition-duration: var(--transition-time);
+	word-break: break-word;
+}
+a:link {
+	color: inherit;
+	text-decoration-color: var(--border-color);
+	text-decoration-thickness: 1px;
+}
+a:visited {
+	color: inherit;
+	text-decoration-color: var(--border-color);
+}
+a:hover {
+	color: var(--border-color);
+	text-decoration-color: var(--border-color);
+}
+#page_header {
+	height: 100%;
+	width: var(--sidebar-width);
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	overflow-y: auto; /* No scroll */
+	padding: 5px;
+	background-color: inherit;
+/*
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+		url("https://travel.usnews.com/images/gettyimages-535829617_crtEjd1.jpg");
+	background-size: auto 100%;
+*/
+}
+#page_content {
+  margin-left: var(--sidebar-width);
+  padding: 20px;
+}
+#page_header nav {
+	display: flex;
+	flex-direction: column;
+	gap: 11px;
+	margin-top: 11px;
+	flex-wrap: wrap;
+}
+#page_header nav a {
+	font-size: 140%;
+	text-decoration: none;
+}
+@media screen and (max-width: 1111px) {
+	#page_header {
+		width: initial;
+		top: initial;
+		left: initial;
+		position: initial;
+		display: flex;
+		flex-direction: row;
+		gap: 11px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 77px;
+		opacity: .9;
+	}
+	#page_content {
+		width: initial;
+		margin-left: initial;
+		padding: 0px;
+		margin-top: 111px;
+	}
+	#page_header nav {
+		flex-direction: row;
+	}
+	#logo_container {
+		height: 11vh !important;
+	}
+}
