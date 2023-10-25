@@ -65,7 +65,7 @@ def build_page(page_title:str, content_generator:callable, pages:dict):
 						for moneda in ['USD','BRL','EUR']:
 							with tags.div(style='flex-shrink: 0;'):
 								tags.span('●')
-								tags.span(id=f'precio_{moneda}', 'cargando...')
+								tags.span('cargando...', id=f'precio_{moneda}')
 								tags.span(f'ARS/{moneda}')
 		
 		tags.script(src='js/divisas.js')
@@ -141,11 +141,10 @@ def generate_contacto():
 def generate_nosotros():
 	tags.h1('Nosotros')
 	
-	with tags.div(style = 'width: 100%; height: 77vh;'):
-		tags.img(
-			src = 'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2021/07/08/490b92922df3407cb5b91d3122a43579_Pavillon-Ledoyen.jpg',
-			style = 'width: 100%; height: 100%; object-fit: contain; overflow: hidden; border-radius: 11px;',
-		)
+	tags.img(
+		src = 'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2021/07/08/490b92922df3407cb5b91d3122a43579_Pavillon-Ledoyen.jpg',
+		style = 'width: 100%; max-height: 88vh; border-radius: 11px;',
+	)
 	
 	tags.p('La pizzería de lujo Slogan Here es un auténtico oasis culinario para los amantes de la pizza que buscan una experiencia gastronómica excepcional. Ubicada en el corazón de la ciudad, este elegante establecimiento irradia sofisticación desde el momento en que cruzas su umbral. El ambiente es una mezcla perfecta de modernidad y tradición italiana, con techos altos, iluminación tenue y una decoración que rinde homenaje a las raíces italianas de la pizzería. Cada detalle ha sido cuidadosamente diseñado para ofrecer a los comensales una sensación de lujo inigualable.')
 	
